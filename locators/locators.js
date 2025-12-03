@@ -15,6 +15,7 @@ export class Dashboard {
         // Plugins menu item in the WordPress admin sidebar
         this.pluginsMenu = page.locator("//a[@class='wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins']//div[@class='wp-menu-name']");
         this.installedPluginsLink = page.locator("//a[normalize-space()='Installed Plugins']");
+        this.dashboardButton = page.locator("//div[normalize-space()='Dashboard']");
     }
 }
 
@@ -36,12 +37,17 @@ export class Plugin {
 export class FlexTable {
     constructor(page) {
         this.page = page;
+        this.FlexTableMenu = page.locator("//div[normalize-space()='FlexTable']");
         // FlexTable menu in WordPress admin sidebar
-        this.flexTableMenu = page.locator("//a[contains(.,'FlexTable')]").first();
+        this.createTable = page.locator("//button[@class='btn btn-lg']");
+        this.insertUrl = page.locator("//input[@id='sheet-url']");
+        this.createTableButton = page.locator("//button[@class='btn ']");
+        this.inputTableName = page.locator("//input[@id='table-name']");
+        this.tableDescription = page.locator("//textarea[@id='table-description']");
+        this.saveTableButton = page.locator("//button[@class='table-action__save']");
         
-        // Create table element for verification (button or link)
-        this.createTableElementForVerification = page.getByRole('button', { name: /Create new table/i })
-            .or(page.getByRole('link', { name: /Create new table/i }));
     }
 }
+
+
 

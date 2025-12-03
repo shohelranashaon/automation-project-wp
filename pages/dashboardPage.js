@@ -15,4 +15,9 @@ export class DashboardPage{
         // Click on Installed Plugins link
         await this.dashboard.installedPluginsLink.click();
     }
+
+    async navigateToDashboard(){
+        await this.dashboard.dashboardButton.click();
+    }
+
 }
