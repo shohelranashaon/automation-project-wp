@@ -1,0 +1,29 @@
+{
+  "name": "automation-project-wp",
+  "version": "1.0.0",
+  "description": "Automation Test Suite for WordPress using Playwright (POM). Includes FlexTable plugin tests and WooCommerce checkout flow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohelranashaon/automation-project-wp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shohelranashaon/automation-project-wp/issues"
+  },
+  "homepage": "https://github.com/shohelranashaon/automation-project-wp#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "playwright": "^1.57.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.1"
+  }
+}
